@@ -1,0 +1,71 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Stackfindover: Sign in</title>
+</head>
+
+<body>
+  <!-- registration form -->
+      <div class="box-root padding-top--24 flex-flex flex-direction--column" style="flex-grow: 1; z-index: 9;">
+        <div class="box-root padding-top--48 padding-bottom--24 flex-flex flex-justifyContent--center">
+          <h1><a href="http://blog.stackfindover.com/" rel="dofollow">Registration</a></h1>
+        </div>
+        <div class="formbg-outer">
+          <div class="formbg">
+            <div class="formbg-inner padding-horizontal--48">
+              <span class="padding-bottom--15">Register as an admin/user</span>
+              <div id="stripe-login">
+                <div class="field padding-bottom--24">
+                    <label for="firstName">First Name</label>
+                    <input type="text" name="firstName" [(ngModel)]="admin.firstName">
+                  </div>
+                  <div class="field padding-bottom--24">
+                    <label for="lastName">Last Name</label>
+                    <input type="text" name="lastName" [(ngModel)]="admin.lastName">
+                  </div>
+                <div class="field padding-bottom--24">
+                  <label for="email">Email</label>
+                  <input type="email" name="email" [(ngModel)]="admin.email">
+                </div>
+                <div class="field padding-bottom--24">
+                  <div class="grid--50-50">
+                    <label for="password">Password</label>
+                    <!-- <div class="reset-pass">
+                      <a href="#">Forgot your password?</a>
+                    </div> -->
+                  </div>
+                  <input type="password" name="password" [(ngModel)]="admin.password">
+                </div>
+                <div class="field padding-bottom--24">
+                    <label for="birthDate">Birth Date</label>
+                    <input type="date" name="birthDate" [(ngModel)]="admin.birthDate">
+                  </div>
+                <!-- <div class="field field-checkbox padding-bottom--24 flex-flex align-center">
+                  <label for="checkbox">
+                    <input type="checkbox" name="checkbox"> Stay signed in for a week
+                  </label>
+                </div> -->
+                <div class="field padding-bottom--24">
+                  <button (click)="registerAdmin();" name="submit" class="continueBtn" > Continue </button>
+                </div>
+                <!-- <div class="field">
+                  <a class="ssolink" href="#">Use single sign-on (Google) instead</a>
+                </div> -->
+            </div>
+            </div>
+          </div>
+          <div class="footer-link padding-top--24">
+            <span>Already have an account? <a href="">Log In</a></span>
+            <!-- <div class="listing padding-top--24 padding-bottom--24 flex-flex center-center">
+              <span><a href="#">© Stackfindover</a></span>
+              <span><a href="#">Contact</a></span>
+              <span><a href="#">Privacy & terms</a></span>
+            </div> -->
+          </div>
+        </div>
+      </div>
+    
+    
+</body>
+
+</html>

@@ -1,0 +1,33 @@
+#retailers {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    margin-left: -300px;
+    
+  }
+  
+  #retailers td, #retailers th {
+    border: none;
+    padding: 25px 8px 8px 50px;
+  }
+  
+  #retailers tr:nth-child(even){
+    background-color: white;
+}
+
+
+  
+  #retailers tr:hover {background-color: white;}
+  
+  #retailers th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: skyblue;
+    color: black;
+    
+  }
+
+  h1 {
+    margin-left: -300px;
+  }

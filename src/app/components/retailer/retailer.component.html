@@ -1,0 +1,46 @@
+<div class="container">
+	<!-- code here -->
+	<div class="card">
+		<div class="card-image">	
+			<h2 class="card-heading">
+				Add <br> Retailer
+				<small>List retailer's membership perks </small>
+			</h2>
+		</div>
+		<form class="card-form">
+			<div class="input">
+				<input type="text" class="input-field" value="Retailer Name" name="name" [(ngModel)]="retailer.name" required/>
+				<label class="input-label">Retailer Name</label>
+			</div>
+						<div class="input">
+				<input type="text" style="visibility: hidden;" class="input-field" value="vlockn@gmail.com" required/>
+				<label class="input-label">Membership Perks & Benefits</label>
+                <textarea rows="4" cols="50" class="input-field" 
+                name="membershipPerks" [(ngModel)]="retailer.membershipPerks">Membership&#10;Perks&#10;&&#10;Benefits</textarea>
+			</div>
+
+            <div class="input">
+				<input type="number" class="input-field" value="0.0" name="NFTvalueInMatic" [(ngModel)]="retailer.NFTvalueInMatic" required/>
+				<label class="input-label">NFT Value in MATIC Token</label>
+			</div>
+
+			<br><br>
+			<app-upload-files></app-upload-files>
+						<!-- <div class="input">
+				<input type="password" class="input-field" required/>
+				<label class="input-label">Password</label>
+			</div> -->
+			<div class="action">
+				<button (click)="saveRetailer()"  class="action-button">Add Retailer</button>
+			</div>
+		</form>
+		<div class="card-info">
+			<p>You may mint NFTs representing a retailer's membership subscription!</p>
+		</div>
+
+        <div *ngIf="submitted">
+            <h4>You submitted successfully!</h4> 
+          </div>
+
+	</div>
+</div>

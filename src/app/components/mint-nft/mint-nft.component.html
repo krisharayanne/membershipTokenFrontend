@@ -1,0 +1,34 @@
+
+<body>
+
+  
+    
+    <label for="retailerName">Select a retailer:</label>
+    <select [(ngModel)]="retailerName"
+    name="retailerName" id="retailerName" >
+      <option> Select a Retailer:</option>
+      <option *ngFor="let retailer of retailers" > {{ retailer.name }} </option>
+    </select>
+
+
+<br>
+<br>
+<br>
+
+<input class="c-checkbox" type="checkbox" id="checkbox">
+<div class="c-formContainer">
+  <div class="c-form">
+    <input class="c-form__input" placeholder="Enter amount" type="number"
+    [(ngModel)]="amount"
+          name="amount"
+     pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{1,63}$" required>
+    <label class="c-form__buttonLabel" for="checkbox">
+        
+    </label>
+    <label class="c-form__toggle" for="checkbox" data-title="Token Amount"></label>
+</div>
+</div>
+
+<button class="c-form__button" (click)="mintTokens()">Mint</button>
+
+</body>

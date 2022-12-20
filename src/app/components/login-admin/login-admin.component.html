@@ -1,0 +1,27 @@
+<div>
+  
+    <div class="segment">
+      <h1>Login</h1>
+    </div>
+
+    <div>
+        <img width="20%" height="20%" src="https://cdn1.vectorstock.com/i/thumb-large/38/10/solid-purple-gradient-user-icon-web-icon-vector-23623810.jpg" >
+    </div>
+    
+   <br>
+
+    <label>
+      <input type="text" placeholder="Email Address" required
+      [(ngModel)]="admin.email"
+      name="email"/>
+    </label>
+    <label>
+      <input type="password" placeholder="Password" required
+      [(ngModel)]="admin.password"
+      name="password"/>
+    </label>
+    <button class="red" (click)="verifyCredentials();" type="button"><i class="icon ion-md-lock"></i> Log in</button>
+    
+   
+    
+</div>

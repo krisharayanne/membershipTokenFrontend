@@ -1,0 +1,31 @@
+
+
+    <h1>Retailers</h1>
+    
+    <table id="retailers">
+      <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Membership Perks</th>
+        <th>NFT Value in MATIC</th>
+        <th>Available Supply</th>
+        <th>NFT Minted</th>
+        <th>Token ID</th>
+        <th>Retailer Logo</th>
+      </tr>
+      <tr *ngFor="let retailer of retailers" >
+        <td> {{ retailer.id }} </td>
+        <td> {{ retailer.name }}</td>
+        <td> {{ retailer.membershipPerks }} </td>
+        <td> {{ retailer.NFTvalueInMatic }} </td>
+        <td> {{ retailer.availableSupply }} </td>
+        <td> {{ retailer.NFTminted }} </td>
+        <td> {{ retailer.tokenId }} </td>
+        <td> {{ retailer.retailerLogo }} </td>
+      </tr>
+      
+      
+     
+    </table>
+    
+    
